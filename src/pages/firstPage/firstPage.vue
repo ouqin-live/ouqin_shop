@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Header title="杨庄北区" left="登录|注册" right="right"></Header>
   </div>
 </template>
@@ -8,11 +8,12 @@
 import Header from "../../components/Header/Header";
 export default {
   date() {
-    return {};
+    return {
+    }
   },
   components: { Header }
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 </style>
