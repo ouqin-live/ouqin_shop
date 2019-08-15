@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import firstPage from '@/components/firstPage/firstPage'
-import discover from '@/components/discover/discover'
-import order from '@/components/order/order'
-import my from '@/components/my/my'
+import firstPage from '@/pages/firstPage/firstPage'
+import discover from '@/pages/discover/discover'
+import order from '@/pages/order/order'
+import my from '@/pages/my/my'
 
 Vue.use(Router)
 
