@@ -7,6 +7,7 @@ import router from './router'
 import ElementUI from 'element-ui' 
 import 'element-ui/lib/theme-chalk/index.css'
 //引入Mint-ui
+<<<<<<< HEAD
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'  
 
@@ -14,6 +15,20 @@ Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 Vue.use(MintUI)
+=======
+//import MintUI from 'mint-ui'
+//import 'mint-ui/lib/style.css'  
+//引入Vant
+import Vant from 'vant';
+import 'vant/lib/index.css';
+
+
+
+Vue.config.productionTip = false
+Vue.use(Vant);
+Vue.use(ElementUI)
+//Vue.use(MintUI)
+>>>>>>> 修改了底部导航栏，引入了vant​
 
 /* eslint-disable no-new */
 new Vue({

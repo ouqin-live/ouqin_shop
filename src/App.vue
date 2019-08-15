@@ -1,29 +1,22 @@
 <template>
   <div id="app">
-    <mt-tabbar v-model="selected">
-      <mt-tab-item id="外卖">
-        <img slot="icon" src="./assets/外卖.png" />
-        外卖
-      </mt-tab-item>
-      <mt-tab-item id="订单">
-        <img slot="icon" src="./assets/订单.png" />
-        订单
-      </mt-tab-item>
-      <mt-tab-item id="发现">
-        <img slot="icon" src="./assets/发现.png" />
-        发现
-      </mt-tab-item>
-      <mt-tab-item id="我的">
-        <img slot="icon" src="./assets/我的.png" />
-        我的
-      </mt-tab-item>
-    </mt-tabbar>
+    <van-tabbar route>
+      <van-tabbar-item  to="/" icon="home-o">首页</van-tabbar-item>
+      <van-tabbar-item  to="/discover" icon="orders-o">订单</van-tabbar-item>
+      <van-tabbar-item  to="/order" icon="search">发现</van-tabbar-item>
+      <van-tabbar-item  to="/my" icon="contact">我的</van-tabbar-item>
+    </van-tabbar>
+    <router-view></router-view>
   </div>
 </template>
-
 <script>
 export default {
-  name: "App"
+  date() {
+    return {
+      
+    };
+  },
+  components: {}
 };
 </script>
 
