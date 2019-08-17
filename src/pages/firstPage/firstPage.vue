@@ -40,19 +40,28 @@
       </ul>
     </div>
     <van-divider />
-    <van-panel title="商家列表" status>
-      <div>
-        <van-card
-          num="2"
-          price="2.00"
-          desc="描述信息"
-          title="商品标题"
-          centered="true"
-          currency="※"
-          thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
-        />
-      </div>
-    </van-panel>
+    <van-card
+      price="2.00"
+      desc="描述信息"
+      title="商品标题"
+      currency=""
+      thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+    />
+    <van-card
+      price="2.00"
+      desc="描述信息"
+      title="商品标题"
+      currency=""
+      thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+    />
+    <van-card
+      price="2.00"
+      desc="描述信息"
+      title="商品标题"
+      currency=""
+      thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+    />
+    
   </div>
 </template>
 
@@ -90,5 +99,8 @@ p {
 .van-cell__title,
 .van-cell__value {
   display: flex;
+}
+.van-card__content{
+  text-align: left;
 }
 </style>
