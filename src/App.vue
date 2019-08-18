@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <van-tabbar route>
+    <van-tabbar route v-show="$route.meta.Footshow">
       <van-tabbar-item  to="/" icon="home-o">首页</van-tabbar-item>
       <van-tabbar-item  to="/discover" icon="orders-o">订单</van-tabbar-item>
       <van-tabbar-item  to="/order" icon="search">发现</van-tabbar-item>

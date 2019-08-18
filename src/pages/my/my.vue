@@ -2,7 +2,7 @@
   <div>
     <Header title="我的"></Header>
     <div class="head">
-      <div class="head_top">
+      <div class="head_top" @click="goLogin">
         <img src="../../assets/我的.png" alt />
         <div class="head_top_text">
           <p>登录|注册</p>
@@ -48,7 +48,12 @@ export default {
   date() {
     return {};
   },
-  components: { Header }
+  components: { Header },
+  methods:{
+    goLogin(){
+      this.$router.push({path:'/login'})
+    }
+  }
 };
 </script>
 
